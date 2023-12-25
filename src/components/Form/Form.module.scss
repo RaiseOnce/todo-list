@@ -1,0 +1,44 @@
+@import '../../sass/base';
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.form_wrapper {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  @include font-size(24px, 24px);
+  padding: 14px 110px 14px 28px;
+  font-weight: 400;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px $color-gray;
+  transition: box-shadow 0.2s ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: 5px 5px 20px $color-gray;
+  }
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15.75px 24px;
+  @include font-size(24px, 24px);
+  font-weight: 400;
+  background-color: $color-red;
+  color: $color-white;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+}

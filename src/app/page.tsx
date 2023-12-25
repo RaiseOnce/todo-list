@@ -1,4 +1,4 @@
-import Header from '@/components/Header/Header'
+import Form from '@/components/Form/Form'
 import styles from './page.module.scss'
 
 export default function Home() {
@@ -6,6 +6,8 @@ export default function Home() {
     <main className={styles.main}>
       <div className="container">
         <h1 className={styles.header}>MY TO DO LIST</h1>
+        <Form />
+        {/* <TodoList/> */}
       </div>
     </main>
   )
