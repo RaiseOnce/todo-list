@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid'
 const Form = ({ input, setInput, todos, setTodos }: any) => {
   const onSubmit = (e: any) => {
     e.preventDefault()
-    setTodos([...todos], { id: uuidv4(), title: input, completed: false })
+    setTodos([...todos, { id: uuidv4(), title: input, completed: false }])
     setInput('')
   }
 

@@ -8,6 +8,7 @@ import { useState } from 'react'
 export default function Home() {
   const [input, setInput] = useState<string>('')
   const [todos, setTodos] = useState<string[]>([])
+  const [editTodo, setEditTodo] = useState(null)
 
   return (
     <main className={styles.main}>
@@ -18,8 +19,10 @@ export default function Home() {
           setInput={setInput}
           todos={todos}
           setTodos={setTodos}
+          editTodo={editTodo}
+          setEditTodo={setEditTodo}
         />
-        <TodoList />
+        <TodoList todos={todos} setTodos={setTodos} setEditTodo={setEditTodo} />
       </div>
     </main>
   )

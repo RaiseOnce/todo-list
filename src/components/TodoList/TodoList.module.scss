@@ -1,1 +1,54 @@
 @import '../../sass/base';
+
+.todoList {
+  @include container;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.item {
+  list-style-type: none;
+  width: 100%;
+  padding: 16px 32px;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  @include font-size(24px, 24px);
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+
+  &_trash {
+    color: $color-red;
+  }
+
+  &_note {
+    color: $color-yellow;
+  }
+
+  &_check {
+    color: $color-green;
+  }
+}
