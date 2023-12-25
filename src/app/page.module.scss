@@ -1,0 +1,11 @@
+@import '../sass/base';
+
+.main {
+  padding: 82px 0;
+}
+
+.header {
+  text-align: center;
+  color: $color-red;
+  @include font-size(62px, 62px);
+}
